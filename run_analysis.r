@@ -1,3 +1,4 @@
+# load the plyr library, used in step 3 for mapvalues
 library(plyr)
 
 # 1: Merges the training and the test sets to create one data set.
