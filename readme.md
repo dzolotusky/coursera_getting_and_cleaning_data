@@ -9,14 +9,15 @@ The assignment is [here] (https://www.coursera.org/learn/data-cleaning/peer/FIZt
 4. Appropriately labels the data set with descriptive variable names.
 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
-**To run my R script, do the following: **
+**To run my R script, do the following:**
 
 1. Download the data [here](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip).
 2. Extract the data from the .zip file.
 3. Place the r script [run_analysis.R](run_analysis.R) into the unzipped directory.
 
-**After that, you can run the R script ([run_analysis.R](run_analysis.R)).**
-** Also, note that the r script requires the plyr library. It can be downloaded and installed by running: install.packages("plyr")**
+**After that, you can run the R script ([run_analysis.R](run_analysis.R))**
+
+**Also, note that the r script requires the plyr library. It can be downloaded and installed by running: install.packages("plyr")**
 
 **Once run, the R script creates a tidy data set, [tidy.txt](tidy.txt).**
 
