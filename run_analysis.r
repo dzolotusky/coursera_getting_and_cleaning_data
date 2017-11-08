@@ -1,4 +1,3 @@
-# load the plyr library, used in step 3 for mapvalues
 library(plyr)
 
 # 1: Merges the training and the test sets to create one data set.
@@ -62,4 +61,8 @@ combined_mean_std$Activity <- plyr::mapvalues(combined_mean_std$Activity,
 # This is already done above where the labels are set on columns
 
 # 5: From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
-write.table(combined_mean_std, "tidy.txt", row.names=FALSE)
+tidy_data <- aggregate(combined_mean_std, by=list(combined_mean_std$Activity, combined_mean_std$SubjectId), FUN=mean)
+tidy_data <- tidy_data[-2]
+tidy_data <- tidy_data[-ncol(tidy_data)]
+colnames(tidy_data)[1] <- "Activity"
+write.table(tidy_data, "tidy.txt", row.names=FALSE)
