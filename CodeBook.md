@@ -38,4 +38,5 @@ Any other files in the data were not used. This includes files about Inertial Si
 3. Trainng and test data sets are combined into one data set
 4. All columns without "mean(" or "std(" in the name are dropped
 5. The data column with Activity is converted from integers to human readable strings for each activity
-6. A tidy data set with the above data is output as a .txt file.
+6. A tidy data set is created by aggregating all rows with the same activity and subject. Replacing other columns with the mean of all rows with the same activity and subject.
+7. A tidy data set with the above data is output as a .txt file.
